@@ -1,31 +1,34 @@
 :root{
-    --color-fondo-primario:rgb(255, 255,255);
+    --color-fondo-primario: rgb(255, 255, 255);
     --color-fondo-secundario: hsl(240, 23%, 97%);
-    --color-fondo-hover:hsl(0, 0%, 33%);
+    --color-fondo-hover: hsl(0, 0%, 33%);
+    --color-fondo-terciario: linear-gradient(90deg, #6B21A8, #4F46E5); /* Color para los botones */
     
-    --fuente-principal: Arial , sans-serif ;
+    --fuente-principal: Arial, sans-serif ;
     --fuente-secundaria: Segoe UI, sans-serif;
 
     --fuente-grosor-general: normal;
     --fuente-centrado: space-around;
     --fuente-justificado: space-between;
-    --fuente-negrita:bold;
+    --fuente-negrita: bold;
 
     --borde-redondeado-tarjeta: 0 0 15px 15px;
     --borde-redondeado-boton: 8px;
     --borde-tarjeta: 2px dotted rgb(136, 136, 136);
     --espaciado-entre-cajas: 5px;
-    --imagen-escalabilidad:cover;
+    --imagen-escalabilidad: cover;
     --item-flexible: flex;
-
 }
-
 
 body{
     margin: 0;
-    background-color: var(--color-fondo-secundario);
+    background-color: var(--color-fondo-primario); /* Ajustado a blanco para coincidir con el diseño */
     font-family: var(--fuente-principal);
 }
+
+/* Limpieza general para enlaces y listas */
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; }
 
 nav{
     background-color: var(--color-fondo-primario);
@@ -35,86 +38,127 @@ nav{
     padding: 10px;
 }
 
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+}
 
 .caja-nav{
     display: var(--item-flexible);
-    justify-content: var(--fuente-justificado);
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px; /* Mayor separación entre enlaces */
+    color: #4B5563;
 }
 
-.caja-boton button{
-    background-color: var(--color-fondo-terciario);
+.caja-boton button {
+    background: var(--color-fondo-terciario); /* Se usa background para admitir degradados */
+    color: white;
     border: none;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: var(--borde-redondeado-boton);
     cursor: pointer;
+    font-size: 15px;
 }
-.caja-boton-difuminado button{
-    background-color: var(--color-fondo-terciario);
+
+.caja-boton-difuminado button {
+    background: var(--color-fondo-terciario); /* Se usa background para admitir degradados */
+    color: white;
     border: none;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: var(--borde-redondeado-boton);
     cursor: pointer;
+    font-size: 15px;
 }
 
-/* Featured Resources*/
-.tarjeta{
-    border: var(--borde-tarjeta);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-}
-
-.caja-redes-sociales{
+/* Hero Banner */
+.caja-hero{
+    position: relative;
     display: flex;
-    justify-content: var(--fuente-justificado);
+    width: 100%;
+    height: 100vh; /* Ocupa el 100% de la altura de la pantalla en lugar de 200px */
     align-items: center;
-    gap: 10px;
+    padding: 0 50px;
+    overflow: hidden;
 }
 
+.hero-imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: var(--imagen-escalabilidad);
+    z-index: -1; 
+    opacity: 0.15; /* Suaviza la foto para que el texto sea legible */
+}
 
+.hero-fuente{
+    z-index: 1;
+    max-width: 800px;
+}
+
+/* Clases tipográficas para replicar el diseño */
+.texto-ligero {
+    font-family: var(--fuente-secundaria);
+    font-weight: 300; 
+    color: #2D3748; 
+    font-size: 3rem;
+    margin: 0;
+}
+
+.texto-lila {
+    color: #C084C3;
+    font-weight: 600;
+}
+
+.texto-pesado {
+    font-family: "Arial Black", "Segoe UI Black", sans-serif;
+    font-weight: 900; 
+    font-size: 4rem;
+    color: #232732;
+    margin: 10px 0;
+}
+
+.texto-morado {
+    color: #9F75B8;
+}
+
+.hero-fuente p.texto-ligero {
+    font-size: 1.2rem;
+    margin: 20px 0 40px 0;
+}
+
+/* Seccion 2 */
+/* Why cutomers love working with us */
 .caja-reseñas{
-    display: flex;
-    justify-content: var(--fuente-justificado);
-    align-items: center;
-    gap: 10px;
+
 }
 
 
 .caja-reseñas-hover :hover{
-    display: flex;
-    justify-content: var(--fuente-justificado);
-    align-items: center;
-    gap: 10px;
-    background-color:var(--color-fondo-hover);
+  
 }
+
+/* Seccion 3 */
 /* Our design and development approach*/
 .caja-servicios{
-    display: flex;
-    justify-content: var(--fuente-justificado);
-    align-items: center;
-    gap: 10px;
+   
 }
 
 .caja-texto-centrado{
-    display: flex;
-    justify-content: var(--fuente-centrado);
-    align-items: center;
-    gap: 10px;
-}
-/* Hero Banner,  la parte principal que se muestra al inicio de una página web*/
-.caja-hero{
-    background-position: right;
-    display: flex;
-    width: 200px;
-    height: 200px;
+  
 }
 
-.hero-fuente{
 
+/* Seccion 4 */
+/* Featured Resources*/
+
+
+/* la tarjeta  contiene 4 div o capas, que son, la imagen, el texto, el read-more, el div que engloba todod */
+.tarjeta{
+   
 }
-
-.hero-imagen{
-
+.caja-redes-sociales{
+  
 }
