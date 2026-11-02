@@ -1,0 +1,120 @@
+:root{
+    --color-fondo-primario:rgb(255, 255,255);
+    --color-fondo-secundario: hsl(240, 23%, 97%);
+    --color-fondo-hover:hsl(0, 0%, 33%);
+    
+    --fuente-principal: Arial , sans-serif ;
+    --fuente-secundaria: Segoe UI, sans-serif;
+
+    --fuente-grosor-general: normal;
+    --fuente-centrado: space-around;
+    --fuente-justificado: space-between;
+    --fuente-negrita:bold;
+
+    --borde-redondeado-tarjeta: 0 0 15px 15px;
+    --borde-redondeado-boton: 8px;
+    --borde-tarjeta: 2px dotted rgb(136, 136, 136);
+    --espaciado-entre-cajas: 5px;
+    --imagen-escalabilidad:cover;
+    --item-flexible: flex;
+
+}
+
+
+body{
+    margin: 0;
+    background-color: var(--color-fondo-secundario);
+    font-family: var(--fuente-principal);
+}
+
+nav{
+    background-color: var(--color-fondo-primario);
+    display: var(--item-flexible);
+    justify-content: var(--fuente-justificado);
+    align-items: center;
+    padding: 10px;
+}
+
+
+.caja-nav{
+    display: var(--item-flexible);
+    justify-content: var(--fuente-justificado);
+    align-items: center;
+    gap: 10px;
+}
+
+.caja-boton button{
+    background-color: var(--color-fondo-terciario);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.caja-boton-difuminado button{
+    background-color: var(--color-fondo-terciario);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Featured Resources*/
+.tarjeta{
+    border: var(--borde-tarjeta);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.caja-redes-sociales{
+    display: flex;
+    justify-content: var(--fuente-justificado);
+    align-items: center;
+    gap: 10px;
+}
+
+
+.caja-reseñas{
+    display: flex;
+    justify-content: var(--fuente-justificado);
+    align-items: center;
+    gap: 10px;
+}
+
+
+.caja-reseñas-hover :hover{
+    display: flex;
+    justify-content: var(--fuente-justificado);
+    align-items: center;
+    gap: 10px;
+    background-color:var(--color-fondo-hover);
+}
+/* Our design and development approach*/
+.caja-servicios{
+    display: flex;
+    justify-content: var(--fuente-justificado);
+    align-items: center;
+    gap: 10px;
+}
+
+.caja-texto-centrado{
+    display: flex;
+    justify-content: var(--fuente-centrado);
+    align-items: center;
+    gap: 10px;
+}
+/* Hero Banner,  la parte principal que se muestra al inicio de una página web*/
+.caja-hero{
+    background-position: right;
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+
+.hero-fuente{
+
+}
+
+.hero-imagen{
+
+}
