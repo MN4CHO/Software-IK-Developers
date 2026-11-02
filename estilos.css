@@ -130,14 +130,125 @@ nav{
 }
 
 /* Seccion 2 */
-/* Why cutomers love working with us */
-.caja-reseñas{
 
+.caja-reseñas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 60px 5vw; 
+    background-color: var(--color-fondo-primario);
+    max-width: 1300px; 
+    margin: 0 auto; 
+}
+
+.boton-flecha {
+    background: transparent;
+    border: 1px solid #4F46E5; 
+    color: #4F46E5;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-central-reseñas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+}
+
+.textos-reseñas {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-reseñas {
+    font-family: var(--fuente-secundaria);
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #2D3748;
+    margin-bottom: 20px;
+}
+
+.texto-destacado {
+    font-weight: 800;
+    color: #1a202c;
+}
+
+.parrafo-reseña {
+    font-family: var(--fuente-principal);
+    font-size: 1.1rem;
+    color: #6B7280;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.caja-tarjetas {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end; 
 }
 
 
-.caja-reseñas-hover :hover{
-  
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease; 
+    width: 140px;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-destacada {
+    transform: scale(1.15);
+    margin: 0 15px;
+}
+
+.tarjeta-destacada:hover {
+    transform: scale(1.15) translateY(-10px);
+}
+
+.avatar-caja img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: var(--imagen-escalabilidad);
+}
+
+
+.tarjeta-destacada .avatar-caja img {
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.estrellas {
+    color: #FBBF24;
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+}
+
+.cliente-nombre p {
+    margin: 0;
+    font-weight: var(--fuente-negrita);
+    font-size: 0.9rem;
+    color: #2D3748;
+}
+
+.cliente-cargo p {
+    margin: 5px 0 0 0;
+    font-size: 0.8rem;
+    color: #9CA3AF;
 }
 
 /* Seccion 3 */
