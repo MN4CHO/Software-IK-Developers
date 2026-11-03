@@ -112,7 +112,7 @@ nav{
 }
 
 .texto-lila {
-    color: #C084C3;
+    color: var(--color-fondo-degradado-horizontal);
     font-weight: 600;
 }
 
@@ -132,7 +132,29 @@ nav{
     font-size: 1.2rem;
     margin: 20px 0 40px 0;
 }
+/* 1. Degradado desde la esquina inferior izquierda hacia la superior derecha */
+.texto-diagonal {
+    background-image: linear-gradient(to top right, #3d1260, #00c6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hace que el fondo se muestre a través del texto */
+}
 
+/* 2. Degradado vertical (de arriba hacia abajo) */
+.texto-vertical {
+    background-image: linear-gradient(to bottom, #00c6ff, #3d1260);
+    /*  background-image: linear-gradient(to top, #00c6ff, #3d1260); (de abajo hacia arriba) */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.texto-horizontal {
+    background-image: linear-gradient(to right, #3d1260, #ff4d00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 /* Seccion 2 */
 
 .caja-reseñas {
