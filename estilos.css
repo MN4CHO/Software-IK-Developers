@@ -3,7 +3,8 @@
     --color-fondo-secundario: hsl(240, 23%, 97%);
     --color-fondo-hover: hsl(0, 0%, 33%);
     --color-fondo-terciario: linear-gradient(90deg, #6B21A8, #4F46E5); /* Color para los botones */
-    
+    --color-fondo-footer: #F7F7FA; /* Color para el pie de página */
+
     --fuente-principal: Arial, sans-serif ;
     --fuente-secundaria: Segoe UI, sans-serif;
 
@@ -154,11 +155,200 @@ nav{
 /* Seccion 4 */
 /* Featured Resources*/
 
-
-/* la tarjeta  contiene 4 div o capas, que son, la imagen, el texto, el read-more, el div que engloba todod */
-.tarjeta{
-   
+.caja-recursos {
+    width: 100%;
+    padding: 70px 40px 90px;
+    background-color: var(--color-fondo-primario);
+    box-sizing: border-box;
 }
-.caja-redes-sociales{
-  
+
+.recursos-encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.recursos-subtitulo {
+    font-family: var(--fuente-secundaria);
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #2D3748;
+    margin: 0;
+}
+
+.recursos-titulo {
+    font-family: "Arial Black", "Segoe UI Black", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #1A202C;
+    margin: 6px 0 0 0;
+}
+
+.caja-tarjetas {
+    display: var(--item-flexible);
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* la tarjeta contiene 4 div o capas, que son, la imagen, el texto, el read-more, el div que engloba todod */
+.tarjeta {
+    flex: 1 1 250px;
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.25s ease;
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: 175px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 14px;
+}
+
+.tarjeta-texto {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-texto h3 {
+    font-family: var(--fuente-secundaria);
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #2D3748;
+    margin: 0;
+    text-align: left;
+}
+
+.tarjeta-leer-mas {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 6px;
+}
+
+.tarjeta-leer-mas a {
+    color: #6B21A8;
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* footer */
+
+.pie-pagina {
+    background-color: var(--color-fondo-footer);
+    width: 100%;
+    margin-top: 40px;
+}
+
+.caja-footer {
+    display: var(--item-flexible);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 40px 40px;
+    box-sizing: border-box;
+}
+
+.footer-columna {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.footer-logo {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A202C;
+    margin: 0 0 20px 0;
+}
+
+.footer-titulo {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A202C;
+    margin: 0 0 20px 0;
+}
+
+.footer-texto {
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    color: #718096;
+    margin: 0;
+    max-width: 270px;
+}
+
+.footer-telefono {
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    font-weight: 500;
+    color: #718096;
+    margin: 15px 0 0 0;
+}
+
+.footer-enlaces li {
+    margin-bottom: 10px;
+}
+
+.footer-enlaces a {
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    color: #718096;
+}
+
+.caja-redes-sociales {
+    display: var(--item-flexible);
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.boton-red-social {
+    width: 38px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D3748;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.footer-copyright {
+    border-top: 1px solid #E2E8F0;
+    background-color: var(--color-fondo-primario);
+    padding: 22px 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-copyright p {
+    font-family: var(--fuente-secundaria);
+    font-size: 13px;
+    color: #718096;
+    margin: 0;
 }
