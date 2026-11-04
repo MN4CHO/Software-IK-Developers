@@ -320,12 +320,13 @@ nav{
     border-radius: 15%;
     display: var(--item-flexible);
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .imagen-servicio{
     height:40px;
-    width: 40px;    
+    width: 40px;
+    border-radius: 15%;    
 }
 
 /*Texto de colores*/
