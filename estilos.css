@@ -5,7 +5,8 @@
     --color-fondo-degradado-diagonal: linear-gradient(to top right, #3d1260, #4F46E5); 
     --color-fondo-degradado-horizontal: linear-gradient(90deg, #3d1260, #4F46E5); 
     --color-fondo-boton-general: hsl(228, 70%, 57%); 
-    
+    --color-fondo-footer: #F7F7FA; /* Color para el pie de página */
+
     --fuente-principal: Arial, sans-serif ;
     --fuente-secundaria: Segoe UI, sans-serif;
 
@@ -279,23 +280,285 @@ nav{
 
 /* Seccion 3 */
 /* Our design and development approach*/
-.caja-servicios{
-   
+.caja-contenedor-servicios{
+   background-color: var(--color-fondo-secundario);
+   border-color: var(--borde-tarjeta);
+    background-color: var(--color-fondo-secundario);
+    padding: 50px 5%;
 }
 
 .caja-texto-centrado{
-  
+  font-family: var(--fuente-principal);
+  text-align: center;
+  font-size: 35px;
+
 }
 
+.texto-centrado-negrilla{
+    font-weight: var(--fuente-negrita);
+    line-height: 1.7;
+}
+
+.articulo-servicio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.contenido-servicio {
+    display: var(--item-flexible);
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.caja-servicios{
+    border: 1px solid rgb(241, 234, 244);
+    background-color:var(--color-fondo-primario);
+    height: 160px;
+    width: 590px;
+    padding: 20px;
+    display: var(--item-flexible);
+    justify-content: var(--fuente-centrado);
+    align-items: center;
+    font-family: var(--fuente-secundaria);
+}
+
+.h-servicio{
+    font-size: 20px;
+    font-weight: var(--fuente-negrita);
+    color: rgb(41, 39, 46);
+    margin: 0px;
+}
+
+.p-servicio{
+    margin-top: 8px;
+    font-size: 16px;
+    color: rgb(77, 74, 74);
+}
+
+.caja-imagen-servicio{
+    height: 35px;
+    width: 45px;
+    padding: 5px;
+    border-radius: 15%;
+    display: var(--item-flexible);
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagen-servicio{
+    height:40px;
+    width: 40px;    
+}
+
+/*Texto de colores*/
+.texto-negro{color:rgb(0, 0, 0);}
+.texto-celeste{color:rgb(86, 172, 245);}
+.texto-rosado{color: rgb(255, 113, 166);}
+.texto-verde{color: rgb(69, 224, 195);}
+.texto-amarillo{color: rgb(250, 185, 104);}
+.texto-fusia{color: rgb(200, 72, 126)}
+
+/*Color cajas*/
+.caja-negro {border: 2px solid #29272E;background: linear-gradient(to bottom right, #29272E, #898d8d);}
+.caja-celeste {border: 2px solid #56ACF5;background: linear-gradient(to bottom right, #56ACF5, #8ec8ec);}
+.caja-rosado {border: 2px solid #FF71A6;background: linear-gradient(to bottom right, #FF71A6, #f39fea);}
+.caja-verde {border: 2px solid #45E0C3;background: linear-gradient(to bottom right, #45E0C3, #92eb9c);}
+.caja-amarillo {border: 2px solid #FAB968;background: linear-gradient(to bottom right, #FAB968, #e1dd99);}
+.caja-fusia {border: 2px solid #C8487E;background: linear-gradient(to bottom right, #C8487E,#da6fbc);}
 
 /* Seccion 4 */
 /* Featured Resources*/
 
-
-/* la tarjeta  contiene 4 div o capas, que son, la imagen, el texto, el read-more, el div que engloba todod */
-.tarjeta{
-   
+.caja-recursos {
+    width: 100%;
+    padding: 70px 40px 90px;
+    background-color: var(--color-fondo-primario);
+    box-sizing: border-box;
 }
-.caja-redes-sociales{
-  
+
+.recursos-encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.caja-recursos .caja-tarjetas {
+    display: var(--item-flexible);
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* la tarjeta contiene 4 div o capas, que son, la imagen, el texto, el read-more, el div que engloba todod */
+.caja-recursos .tarjeta {
+    flex: 1 1 250px;
+    max-width: 290px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    text-align: left;
+    box-sizing: border-box;
+    transition: none;
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: 175px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: var(--imagen-escalabilidad);
+    display: block;
+    border-radius: 14px;
+}
+
+.tarjeta-texto {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-texto h3 {
+    font-family: var(--fuente-secundaria);
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #2D3748;
+    margin: 0;
+    text-align: left;
+}
+
+.tarjeta-leer-mas {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 6px;
+}
+
+.tarjeta-leer-mas a {
+    color: #6B21A8;
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* footer */
+
+.pie-pagina {
+    background-color: var(--color-fondo-footer);
+    width: 100%;
+    margin-top: 40px;
+}
+
+.caja-footer {
+    display: var(--item-flexible);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 40px 40px;
+    box-sizing: border-box;
+}
+
+.footer-columna {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.footer-logo {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A202C;
+    margin: 0 0 20px 0;
+}
+
+.footer-titulo {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A202C;
+    margin: 0 0 20px 0;
+}
+
+.footer-texto {
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    color: #718096;
+    margin: 0;
+    max-width: 270px;
+}
+
+.footer-telefono {
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    font-weight: 500;
+    color: #718096;
+    margin: 15px 0 0 0;
+}
+
+.footer-enlaces li {
+    margin-bottom: 10px;
+}
+
+.footer-enlaces a {
+    font-family: var(--fuente-secundaria);
+    font-size: 14px;
+    color: #718096;
+}
+
+.caja-redes-sociales {
+    display: var(--item-flexible);
+    align-items: center;
+    gap: 12px;
+    align-self: flex-end;
+    margin-top: auto;
+    padding-bottom: 5px;
+}
+
+.boton-red-social {
+    width: 38px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D3748;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    border-top: 1px solid #E2E8F0;
+    background-color: var(--color-fondo-primario);
+    padding: 22px 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-copyright p {
+    font-family: var(--fuente-secundaria);
+    font-size: 13px;
+    color: #718096;
+    margin: 0;
 }
