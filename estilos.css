@@ -254,14 +254,96 @@ nav{
 
 /* Seccion 3 */
 /* Our design and development approach*/
-.caja-servicios{
-   
+.caja-contenedor-servicios{
+   background-color: var(--color-fondo-secundario);
+   border-color: var(--borde-tarjeta);
+    background-color: var(--color-fondo-secundario);
+    padding: 50px 5%;
 }
 
 .caja-texto-centrado{
-  
+  font-family: var(--fuente-principal);
+  text-align: center;
+  font-size: 35px;
+
 }
 
+.texto-centrado-negrilla{
+    font-weight: var(--fuente-negrita);
+    line-height: 1.7;
+}
+
+.articulo-servicio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.contenido-servicio {
+    display: var(--item-flexible);
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.caja-servicios{
+    border: 1px solid rgb(241, 234, 244);
+    background-color:var(--color-fondo-primario);
+    height: 160px;
+    width: 590px;
+    padding: 20px;
+    display: var(--item-flexible);
+    justify-content: var(--fuente-centrado);
+    align-items: center;
+    font-family: var(--fuente-secundaria);
+}
+
+.h-servicio{
+    font-size: 20px;
+    font-weight: var(--fuente-negrita);
+    color: rgb(41, 39, 46);
+    margin: 0px;
+}
+
+.p-servicio{
+    margin-top: 8px;
+    font-size: 16px;
+    color: rgb(77, 74, 74);
+}
+
+.caja-imagen-servicio{
+    height: 35px;
+    width: 45px;
+    padding: 5px;
+    border-radius: 15%;
+    display: var(--item-flexible);
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagen-servicio{
+    height:30px;
+    width: 40px;
+    transform: scaleX(-1);
+}
+
+/*Texto de colores*/
+.texto-negro{color:rgb(0, 0, 0);}
+.texto-celeste{color:rgb(86, 172, 245);}
+.texto-rosado{color: rgb(255, 113, 166);}
+.texto-verde{color: rgb(69, 224, 195);}
+.texto-amarillo{color: rgb(250, 185, 104);}
+.texto-fusia{color: rgb(200, 72, 126)}
+
+/*Color cajas*/
+.caja-negro {border: 2px solid #29272E;background: linear-gradient(to bottom right, #29272E, #898d8d);}
+.caja-celeste {border: 2px solid #56ACF5;background: linear-gradient(to bottom right, #56ACF5, #8ec8ec);}
+.caja-rosado {border: 2px solid #FF71A6;background: linear-gradient(to bottom right, #FF71A6, #f39fea);}
+.caja-verde {border: 2px solid #45E0C3;background: linear-gradient(to bottom right, #45E0C3, #92eb9c);}
+.caja-amarillo {border: 2px solid #FAB968;background: linear-gradient(to bottom right, #FAB968, #e1dd99);}
+.caja-fusia {border: 2px solid #C8487E;background: linear-gradient(to bottom right, #C8487E,#da6fbc);}
 
 /* Seccion 4 */
 /* Featured Resources*/
