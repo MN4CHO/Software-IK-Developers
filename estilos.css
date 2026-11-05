@@ -63,7 +63,7 @@ nav{
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: var(--borde-redondeado-boton);
+    border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
 }
@@ -116,11 +116,6 @@ nav{
     margin: 0;
 }
 
-.texto-lila {
-    color: var(--color-fondo-degradado-horizontal);
-    font-weight: 600;
-}
-
 .texto-pesado {
     font-family: "Arial Black", "Segoe UI Black", sans-serif;
     font-weight: 900; 
@@ -129,37 +124,28 @@ nav{
     margin: 10px 0;
 }
 
-.texto-morado {
-    color: #9F75B8;
-}
-
 .hero-fuente p.texto-ligero {
     font-size: 1.2rem;
     margin: 20px 0 40px 0;
 }
 /* 1. Degradado desde la esquina inferior izquierda hacia la superior derecha */
-.texto-diagonal {
-    background-image: linear-gradient(to top right, #3d1260, #00c6ff);
+.texto-degradado-diagonal {
+    background-image: linear-gradient(to top right, #8d68c2, #b667a2);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; /* Hace que el fondo se muestre a través del texto */
 }
 
 /* 2. Degradado vertical (de arriba hacia abajo) */
-.texto-vertical {
-    background-image: linear-gradient(to bottom, #00c6ff, #3d1260);
+.texto-degradado-vertical { 
+    background-image: linear-gradient(to bottom,  #ba7cbd,#c65da9 );
     /*  background-image: linear-gradient(to top, #00c6ff, #3d1260); (de abajo hacia arriba) */
     -webkit-background-clip: text;
     background-clip: text;
+    font-weight: 600;
     color: transparent;
 }
 
-.texto-horizontal {
-    background-image: linear-gradient(to right, #3d1260, #ff4d00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
 /* Seccion 2 */
 
 .caja-reseñas {
