@@ -20,6 +20,10 @@
     --imagen-escalabilidad: cover;
     --item-flexible: flex;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 
 body{
     margin: 0;
