@@ -143,9 +143,9 @@ nav{
 }
 
 .boton-flecha {
-    background: transparent;
-    border: 1px solid #4F46E5; 
-    color: #4F46E5;
+    background: #fff;;
+    border: 1.5px solid #5B0E7B;
+    color:#5B0E7B;
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -156,6 +156,7 @@ nav{
     align-items: center;
 }
 
+
 .contenido-central-reseñas {
     display: flex;
     flex-direction: column;
@@ -165,34 +166,32 @@ nav{
 
 .textos-reseñas {
     text-align: center;
-    margin-bottom: 50px;
-}
-
-.titulo-reseñas {
     font-family: var(--fuente-secundaria);
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    
     color: #2D3748;
-    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .texto-destacado {
-    font-weight: 800;
+    font-weight: 650;
     color: #1a202c;
 }
 
-.parrafo-reseña {
+.parrafo-reseña p {
     font-family: var(--fuente-principal);
     font-size: 1.1rem;
-    color: #6B7280;
-    line-height: 1.6;
-    max-width: 650px;
-    margin: 0 auto;
+    color: #718096;
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 80px;
+    margin: 0;
 }
 
 .caja-tarjetas {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     justify-content: center;
     align-items: flex-end; 
 }
@@ -205,6 +204,7 @@ nav{
     text-align: center;
     transition: transform 0.3s ease; 
     width: 140px;
+    opacity: 0.55;
 }
 
 
@@ -215,6 +215,7 @@ nav{
 .tarjeta-destacada {
     transform: scale(1.15);
     margin: 0 15px;
+    opacity: 1;
 }
 
 .tarjeta-destacada:hover {
@@ -222,34 +223,43 @@ nav{
 }
 
 .avatar-caja img {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     object-fit: var(--imagen-escalabilidad);
 }
 
 
 .tarjeta-destacada .avatar-caja img {
-    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 0 0 6px #fff, 0 10px 30px rgba(0, 0, 0, 0.10);
 }
 
 .estrellas {
     color: #FBBF24;
     margin: 15px 0 5px 0;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .cliente-nombre p {
     margin: 0;
-    font-weight: var(--fuente-negrita);
-    font-size: 0.9rem;
-    color: #2D3748;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #A0AEC0;
 }
 
 .cliente-cargo p {
     margin: 5px 0 0 0;
-    font-size: 0.8rem;
-    color: #9CA3AF;
+    font-size: 0.75rem;
+    color: #CBD5E0;
+}
+
+.tarjeta-destacada .cliente-nombre p {
+    font-weight: 700;
+    color: #5B0E7B;
+}
+
+.tarjeta-destacada .cliente-cargo p {
+    color: #1A202C;
 }
 
 /* Seccion 3 */
