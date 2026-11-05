@@ -328,8 +328,8 @@ nav{
 }
 
 .caja-imagen-servicio{
-    height: 35px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     padding: 5px;
     border-radius: 15%;
     display: var(--item-flexible);
